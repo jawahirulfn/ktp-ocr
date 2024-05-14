@@ -4,7 +4,7 @@ import json
 
 pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract'
 
-image_path = cv2.imread('contoh/ktp3.jpg')
+image_path = cv2.imread('ktp_contoh/ktp3.jpg')
 
 # Preprocessing image before OCR
 
@@ -19,7 +19,8 @@ adaptive_thresh = cv2.adaptiveThreshold(thresh, 255, cv2.ADAPTIVE_THRESH_GAUSSIA
                                             cv2.THRESH_BINARY, 11, 2)
 
 # OCR
-text = pytesseract.image_to_string(thresh, lang='ind', config='--psm 3 --oem 3')
+my_config = '--psm 3 --oem 3'
+text = pytesseract.image_to_string(adaptive_thresh, lang='ind', config=my_config)
 
 # Split the text into separate fields
 fields = {
