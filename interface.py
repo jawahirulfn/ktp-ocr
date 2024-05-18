@@ -9,11 +9,11 @@ import json
 from ocrMain import ImageProcessor, OCRProcessor, DataExtractor, JSONFormatter, PostgresDB
 
 # Konfigurasi database PostgreSQL
-DB_NAME = ""
-DB_USER = ""
-DB_PASSWORD = ""
-DB_HOST = ""
-DB_PORT = ""
+DB_NAME = "ocrktp"
+DB_USER = "postgres"
+DB_PASSWORD = "kyuura20020929"
+DB_HOST = "localhost"
+DB_PORT = "5432"
 
 # Global variable to store extracted data
 extracted_data = None

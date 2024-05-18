@@ -125,7 +125,7 @@ class PostgresDB:
         self.connection.close()
 
 
-# imageProcessor = ImageProcessor('ktp_contoh/ktp2.jpg')
+# imageProcessor = ImageProcessor('ktp_contoh/ktp4.jpg')
 # processedImage = imageProcessor.preprocess()
 
 # ocrProcessor = OCRProcessor()
